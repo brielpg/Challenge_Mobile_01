@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Challenge01</string>
+    <string name="button_cadastrar_se">Create account</string>
+    <string name="textview_ainda_n_o_tem_cadastro">Not registered yet?</string>
+    <string name="textview_seja_bem_vindo_ao_d_a_s">Welcome to D.A.S.</string>
+    <string name="textview_esqueci_a_senha">Forgot password?</string>
+    <string name="button_entrar">Login</string>
+    <string name="editText_senha">Password</string>
+    <string name="editText_usuario">User</string>
+</resources>

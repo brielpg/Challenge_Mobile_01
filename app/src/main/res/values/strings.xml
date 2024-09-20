@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Challenge01</string>
+    <string name="button_cadastrar_se">Cadastrar-se</string>
+    <string name="textview_ainda_n_o_tem_cadastro">Ainda não tem cadastro?</string>
+    <string name="textview_seja_bem_vindo_ao_d_a_s">Seja bem vindo ao D.A.S.</string>
+    <string name="textview_esqueci_a_senha">Esqueci a senha</string>
+    <string name="button_entrar">Entrar</string>
+    <string name="editText_senha">Senha</string>
+    <string name="editText_usuario">Usuário</string>
+</resources>
