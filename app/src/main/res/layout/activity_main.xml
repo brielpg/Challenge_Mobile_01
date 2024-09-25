@@ -18,25 +18,26 @@
         android:padding="8dp"
         android:text="LOGIN"
         android:textColor="#2C013B"
-        android:textSize="32sp"
+        android:textSize="42sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/botao_design2"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/button_cadastrar_se"
+        android:textAllCaps="false"
         android:textColor="@color/cinza_escuro"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2" />
 
     <TextView
         android:id="@+id/textView3"
@@ -46,21 +47,25 @@
         android:gravity="center_horizontal"
         android:text="@string/textview_ainda_n_o_tem_cadastro"
         android:textColor="@color/cinza_escuro"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="@+id/button2"
         app:layout_constraintStart_toStartOf="@+id/button2" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/button3"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/azul_bebe_escuro"
-        android:textColor="@color/roxo_texto"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/botao_design"
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/button_entrar"
+        android:textColor="@color/roxo_texto"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -71,7 +76,7 @@
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/textview_seja_bem_vindo_ao_d_a_s"
         android:textColor="@color/roxo_texto"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
@@ -85,39 +90,44 @@
         android:paddingStart="8dp"
         android:text="@string/textview_esqueci_a_senha"
         android:textColor="@color/cinza_escuro"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
-    <EditText
+    <android.widget.EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFF"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:fontFamily="@font/commissioner"
+        android:fontFamily="sans-serif"
         android:hint="@string/editText_senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="8dp"
         android:textColorHint="@color/cinza_claro"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextText2"
         app:layout_constraintStart_toStartOf="@+id/editTextText2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
 
-    <EditText
+    <android.widget.EditText
         android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:background="#FFFFFF"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:fontFamily="@font/commissioner"
+        android:fontFamily="sans-serif"
         android:hint="@string/editText_usuario"
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="8dp"
         android:textColorHint="@color/cinza_claro"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
