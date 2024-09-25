@@ -8,4 +8,7 @@
     <string name="button_entrar">Login</string>
     <string name="editText_senha">Password</string>
     <string name="editText_usuario">User</string>
+    <string name="txtview_login">SIGN IN</string>
+    <string name="contentDescription_person">Person Icon</string>
+    <string name="contentDescription_lock">Lock Icon</string>
 </resources>
