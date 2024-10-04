@@ -6,8 +6,9 @@
     <string name="textview_esqueci_a_senha">Esqueci a senha</string>
     <string name="button_entrar">Entrar</string>
     <string name="editText_senha">Senha</string>
-    <string name="editText_usuario">Email/CNPJ</string>
+    <string name="editText_usuario">CNPJ</string>
     <string name="txtview_login">LOGIN</string>
     <string name="contentDescription_person">Icone Pessoa</string>
     <string name="contentDescription_lock">Icone Cadeado</string>
+    <string name="errorTextView">CNPJ ou Senha Inválidos!</string>
 </resources>

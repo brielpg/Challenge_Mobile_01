@@ -156,4 +156,18 @@
         app:srcCompat="@drawable/lock_24px"
         app:tint="@color/cinza_escuro_plus" />
 
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/commissioner"
+        android:textColor="#F44E4E"
+        android:textColorHint="#F44E4E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        tools:text="@string/errorTextView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
