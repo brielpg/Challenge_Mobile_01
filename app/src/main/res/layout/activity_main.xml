@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.widget.Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_cadastrarse"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="42dp"
@@ -36,8 +36,8 @@
         android:textColor="@color/cinza_escuro"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextNomeClinica"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeClinica" />
 
     <TextView
         android:id="@+id/textView3"
@@ -48,9 +48,9 @@
         android:text="@string/textview_ainda_n_o_tem_cadastro"
         android:textColor="@color/cinza_escuro"
         android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_cadastrarse"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cadastrarse"
+        app:layout_constraintStart_toStartOf="@+id/btn_cadastrarse" />
 
     <android.widget.Button
         android:id="@+id/button3"
@@ -109,12 +109,12 @@
         android:padding="8dp"
         android:textColorHint="@color/cinza_claro"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextNomeClinica"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeClinica"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeClinica" />
 
     <android.widget.EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextNomeClinica"
         android:layout_width="280dp"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
@@ -137,9 +137,9 @@
         android:layout_width="52dp"
         android:layout_height="0dp"
         android:layout_marginEnd="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText2"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toTopOf="@+id/editTextText2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNomeClinica"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNomeClinica"
+        app:layout_constraintTop_toTopOf="@+id/editTextNomeClinica"
         android:contentDescription="@string/contentDescription_person"
         app:srcCompat="@drawable/person_24px"
         app:tint="@color/cinza_escuro_plus" />
