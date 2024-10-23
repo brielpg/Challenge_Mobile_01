@@ -4,12 +4,20 @@
     <string name="button_cadastrar_se">Create account</string>
     <string name="textview_ainda_n_o_tem_cadastro">Not registered yet?</string>
     <string name="textview_seja_bem_vindo_ao_d_a_s">Welcome to D.A.S.</string>
+    <string name="textview_preencha_os_campos_abaixo">Fill in the fields below</string>
     <string name="textview_esqueci_a_senha">Forgot password?</string>
+    <string name="textview_dados_invalidos">Invalid Data</string>
     <string name="button_entrar">Login</string>
+    <string name="avancar">NEXT</string>
     <string name="editText_senha">Password</string>
     <string name="editText_usuario">CNPJ</string>
     <string name="txtview_login">SIGN IN</string>
     <string name="contentDescription_person">Person Icon</string>
     <string name="contentDescription_lock">Lock Icon</string>
     <string name="errorTextView">CNPJ or Password invalid!</string>
+    <string name="cadastro">SIGN UP</string>
+    <string name="nome_clinica">Clinic Name</string>
+    <string name="email">Email</string>
+    <string name="telefone">Phone Number</string>
+    <string name="razao_social">Corporate Name</string>
 </resources>

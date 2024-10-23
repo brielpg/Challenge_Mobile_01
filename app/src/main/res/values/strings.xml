@@ -3,12 +3,20 @@
     <string name="button_cadastrar_se">Cadastrar-se</string>
     <string name="textview_ainda_n_o_tem_cadastro">Ainda não tem cadastro?</string>
     <string name="textview_seja_bem_vindo_ao_d_a_s">Seja bem vindo ao D.A.S.</string>
+    <string name="textview_preencha_os_campos_abaixo">Preencha os campos abaixo</string>
     <string name="textview_esqueci_a_senha">Esqueci a senha</string>
+    <string name="textview_dados_invalidos">Dados Inválidos</string>
     <string name="button_entrar">Entrar</string>
+    <string name="avancar">AVANÇAR</string>
     <string name="editText_senha">Senha</string>
     <string name="editText_usuario">CNPJ</string>
     <string name="txtview_login">LOGIN</string>
     <string name="contentDescription_person">Icone Pessoa</string>
     <string name="contentDescription_lock">Icone Cadeado</string>
     <string name="errorTextView">CNPJ ou Senha Inválidos!</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="nome_clinica">Nome Clinica</string>
+    <string name="email">Email</string>
+    <string name="telefone">Telefone</string>
+    <string name="razao_social">Razao Social</string>
 </resources>
