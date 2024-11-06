@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CadastroEnderecoActivity"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:fillViewport="true">
@@ -38,7 +40,7 @@
             android:layout_marginBottom="32dp"
             android:background="@drawable/botao_design"
             android:fontFamily="@font/commissioner_semibold"
-            android:text="@string/avancar"
+            android:text="@string/enviar"
             android:textColor="@color/roxo_texto"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/commissioner_semibold"
-            android:text="@string/textview_preencha_os_campos_abaixo"
+            android:text="@string/textview_informacoes_do_endereco"
             android:textColor="@color/roxo_texto"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +70,7 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/editText_usuario"
+            android:hint="@string/editText_logradouro"
             android:inputType="text"
             android:minHeight="48dp"
             android:padding="8dp"
@@ -87,8 +89,8 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/editText_senha"
-            android:inputType="textPassword"
+            android:hint="@string/editText_numero"
+            android:inputType="text|number"
             android:minHeight="48dp"
             android:padding="8dp"
             android:textColorHint="@color/cinza_claro"
@@ -99,6 +101,26 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextRazaoSocial" />
 
         <android.widget.EditText
+            android:id="@+id/editTextComplemento"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/botao_design2"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/complemento"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColorHint="@color/cinza_claro"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextNomeClinica"
+            app:layout_constraintHorizontal_bias="0.937"
+            app:layout_constraintStart_toStartOf="@+id/editTextNomeClinica"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
+
+        <android.widget.EditText
             android:id="@+id/editTextRazaoSocial"
             android:layout_width="0dp"
             android:layout_height="55dp"
@@ -107,7 +129,7 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/razao_social"
+            android:hint="@string/uf"
             android:inputType="text"
             android:minHeight="48dp"
             android:padding="8dp"
@@ -127,8 +149,8 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/telefone"
-            android:inputType="text|phone"
+            android:hint="@string/cidade"
+            android:inputType="text"
             android:minHeight="48dp"
             android:padding="8dp"
             android:textColorHint="@color/cinza_claro"
@@ -147,7 +169,7 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/email"
+            android:hint="@string/bairro"
             android:inputType="text"
             android:minHeight="48dp"
             android:padding="8dp"
@@ -166,7 +188,7 @@
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:hint="@string/nome_clinica"
+            android:hint="@string/cep"
             android:inputType="text"
             android:minHeight="48dp"
             android:padding="8dp"
@@ -182,14 +204,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/commissioner"
-            android:text="@string/textview_dados_invalidos"
             android:textColor="#F44E4E"
             android:textColorHint="#F44E4E"
             android:textSize="16sp"
-            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="@+id/btn_entrar"
             app:layout_constraintStart_toStartOf="@+id/btn_entrar"
-            app:layout_constraintTop_toBottomOf="@+id/editTextSenha"
+            app:layout_constraintTop_toBottomOf="@+id/editTextComplemento"
             tools:text="@string/textview_dados_invalidos" />
 
         <ImageButton
@@ -208,6 +228,4 @@
             tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </ScrollView>

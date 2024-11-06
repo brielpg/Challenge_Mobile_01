@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/loginTextView"
+        android:id="@+id/titleEnderecoTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/azul_bebe_escuro"
@@ -36,8 +36,8 @@
         android:textColor="@color/cinza_escuro"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNomeClinica"
-        app:layout_constraintStart_toStartOf="@+id/editTextNomeClinica" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextCnpj"
+        app:layout_constraintStart_toStartOf="@+id/editTextCnpj" />
 
     <TextView
         android:id="@+id/textView3"
@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="@+id/btn_cadastrarse" />
 
     <android.widget.Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_entrar"
         android:layout_width="0dp"
         android:layout_height="62dp"
         android:layout_marginStart="16dp"
@@ -79,7 +79,7 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView" />
 
     <TextView
         android:id="@+id/textView5"
@@ -109,12 +109,12 @@
         android:padding="8dp"
         android:textColorHint="@color/cinza_claro"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNomeClinica"
-        app:layout_constraintStart_toStartOf="@+id/editTextNomeClinica"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNomeClinica" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextCnpj"
+        app:layout_constraintStart_toStartOf="@+id/editTextCnpj"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCnpj" />
 
     <android.widget.EditText
-        android:id="@+id/editTextNomeClinica"
+        android:id="@+id/editTextCnpj"
         android:layout_width="280dp"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
@@ -137,37 +137,39 @@
         android:layout_width="52dp"
         android:layout_height="0dp"
         android:layout_marginEnd="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNomeClinica"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNomeClinica"
-        app:layout_constraintTop_toTopOf="@+id/editTextNomeClinica"
         android:contentDescription="@string/contentDescription_person"
-        app:srcCompat="@drawable/person_24px"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCnpj"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCnpj"
+        app:layout_constraintTop_toTopOf="@+id/editTextCnpj"
+        app:srcCompat="@drawable/fill_person"
         app:tint="@color/cinza_escuro_plus" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/contentDescription_lock"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
-        android:contentDescription="@string/contentDescription_lock"
-        app:srcCompat="@drawable/lock_24px"
+        app:srcCompat="@drawable/fill_lock_24px"
         app:tint="@color/cinza_escuro_plus" />
 
     <TextView
         android:id="@+id/errorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/commissioner"
+        android:text="@string/errorTextView"
         android:textColor="#F44E4E"
         android:textColorHint="#F44E4E"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_entrar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_entrar"
+        app:layout_constraintStart_toStartOf="@+id/btn_entrar"
         tools:text="@string/errorTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_bebe_claro"
+    tools:context=".PerfilActivity">
+
+    <TextView
+        android:id="@+id/titleEnderecoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_bebe_escuro"
+        android:fontFamily="@font/commissioner_extrabold"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="@string/perfil"
+        android:textColor="#2C013B"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.widget.Button
+        android:id="@+id/button_alterar_dados"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:background="@drawable/botao_design"
+        android:fontFamily="@font/commissioner_semibold"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/alterar_dados"
+        android:textColor="@color/roxo_texto"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCnpjUser" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_bebe_escuro"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_home"
+            android:scaleType="fitXY"
+            android:src="@drawable/fill_home"
+            app:tint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPerfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_perfil"
+            android:scaleType="fitXY"
+            android:src="@drawable/fill_person"
+            app:tint="@color/black" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:shapeAppearanceOverlay="@style/imagemCircular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewNomeClinicaPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/commissioner_semibold"
+        android:text=""
+        android:textColor="@color/roxo_texto"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewPerfil"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil"
+        tools:text="Nome Clinica," />
+
+    <TextView
+        android:id="@+id/textViewTelefonePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/commissioner_semibold"
+        android:text="@string/telefone"
+        android:textColor="@color/roxo_texto"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNomeClinicaPerfil"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomeClinicaPerfil" />
+
+    <TextView
+        android:id="@+id/textViewTelefoneUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:fontFamily="@font/commissioner_semibold"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@color/roxo_texto"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/button_alterar_dados"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefonePerfil"
+        tools:text="+55 00 00000-0000" />
+
+    <ImageView
+        android:id="@+id/imageViewTelefone"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTelefoneUser"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintTop_toTopOf="@+id/textViewTelefoneUser"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fill_call_24px"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewEmailUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@color/white"
+        android:fontFamily="@font/commissioner_semibold"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@color/roxo_texto"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTelefoneUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefoneUser"
+        tools:text="paciente@gmail.com" />
+
+    <TextView
+        android:id="@+id/textViewEmailPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/commissioner_semibold"
+        android:text="@string/email"
+        android:textColor="@color/roxo_texto"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmailUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefonePerfil" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmailUser"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTelefone"
+        app:layout_constraintTop_toTopOf="@+id/textViewEmailUser"
+        app:srcCompat="@drawable/fill_mail_24px"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewCnpjUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:background="@color/white"
+        android:fontFamily="@font/commissioner_semibold"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="@color/roxo_texto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTelefoneUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailUser"
+        tools:text="XX.XXX.XX-0001-XX" />
+
+    <TextView
+        android:id="@+id/textViewCnpjPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/commissioner_semibold"
+        android:text="@string/cnpj"
+        android:textColor="@color/roxo_texto"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCnpjUser"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefonePerfil" />
+
+    <ImageView
+        android:id="@+id/imageViewCnpj"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCnpjUser"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEmailUser"
+        app:layout_constraintStart_toStartOf="@+id/imageViewEmail"
+        app:layout_constraintTop_toTopOf="@+id/textViewCnpjUser"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fill_person"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/titleEnderecoTextView"
+        app:layout_constraintStart_toStartOf="@+id/titleEnderecoTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/botao_sair"
+        app:srcCompat="@drawable/logout_24px"
+        app:tint="@color/roxo_texto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

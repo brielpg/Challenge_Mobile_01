@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_bebe_claro"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleEnderecoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_bebe_escuro"
+        android:fontFamily="@font/commissioner_extrabold"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="@string/txtview_pagina_inicial"
+        android:textColor="#2C013B"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_bebe_escuro"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_home"
+            android:scaleType="fitXY"
+            android:src="@drawable/fill_home"
+            app:tint="@color/black" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPerfil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/botao_perfil"
+            android:scaleType="fitXY"
+            android:src="@drawable/fill_person"
+            app:tint="@color/black" />
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn_cadastrar_paciente"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/commissioner"
+        android:text="@string/cadastrar_paciente"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_historico_de_relatorios"
+        app:layout_constraintStart_toStartOf="@+id/btn_historico_de_relatorios"
+        app:layout_constraintTop_toBottomOf="@+id/btn_enviar_relatorio" />
+
+    <android.widget.Button
+        android:id="@+id/btn_enviar_relatorio"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/commissioner"
+        android:text="@string/enviar_relatorio"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cadastrar_paciente"
+        app:layout_constraintStart_toStartOf="@+id/btn_cadastrar_paciente"
+        app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <android.widget.Button
+        android:id="@+id/btn_status"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/commissioner"
+        android:text="@string/status"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_historico_de_relatorios"
+        app:layout_constraintStart_toStartOf="@+id/btn_historico_de_relatorios"
+        app:layout_constraintTop_toBottomOf="@+id/btn_historico_de_relatorios" />
+
+    <android.widget.Button
+        android:id="@+id/btn_historico_de_relatorios"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/botao_design2"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/commissioner"
+        android:text="@string/historico_de_relatorios"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cadastrar_paciente" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

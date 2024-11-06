@@ -4,6 +4,7 @@
     <string name="textview_ainda_n_o_tem_cadastro">Ainda não tem cadastro?</string>
     <string name="textview_seja_bem_vindo_ao_d_a_s">Seja bem vindo ao D.A.S.</string>
     <string name="textview_preencha_os_campos_abaixo">Preencha os campos abaixo</string>
+    <string name="textview_informacoes_do_endereco">Informaçoes do Endereço</string>
     <string name="textview_esqueci_a_senha">Esqueci a senha</string>
     <string name="textview_dados_invalidos">Dados Inválidos</string>
     <string name="button_entrar">Entrar</string>
@@ -11,6 +12,7 @@
     <string name="editText_senha">Senha</string>
     <string name="editText_usuario">CNPJ</string>
     <string name="txtview_login">LOGIN</string>
+    <string name="txtview_pagina_inicial">PÁGINA INICIAL</string>
     <string name="contentDescription_person">Icone Pessoa</string>
     <string name="contentDescription_lock">Icone Cadeado</string>
     <string name="errorTextView">CNPJ ou Senha Inválidos!</string>
@@ -19,4 +21,23 @@
     <string name="email">Email</string>
     <string name="telefone">Telefone</string>
     <string name="razao_social">Razao Social</string>
+    <string name="enviar_relatorio">Enviar Relatório</string>
+    <string name="cadastrar_paciente">Cadastrar Paciente</string>
+    <string name="historico_de_relatorios">Histórico de Relatórios</string>
+    <string name="status">Status</string>
+    <string name="botao_voltar">Botao Voltar</string>
+    <string name="botao_perfil">Botao Perfil</string>
+    <string name="botao_home">Botao Home</string>
+    <string name="editText_numero">Número</string>
+    <string name="editText_logradouro">Logradouro</string>
+    <string name="enviar">Enviar</string>
+    <string name="complemento">Complemento</string>
+    <string name="cep">CEP</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="uf">UF</string>
+    <string name="perfil">PERFIL</string>
+    <string name="alterar_dados">Alterar Dados</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="botao_sair">Botao Sair</string>
 </resources>

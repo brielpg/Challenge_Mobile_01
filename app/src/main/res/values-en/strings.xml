@@ -5,6 +5,7 @@
     <string name="textview_ainda_n_o_tem_cadastro">Not registered yet?</string>
     <string name="textview_seja_bem_vindo_ao_d_a_s">Welcome to D.A.S.</string>
     <string name="textview_preencha_os_campos_abaixo">Fill in the fields below</string>
+    <string name="textview_informacoes_do_endereco">Fill your Address information below</string>
     <string name="textview_esqueci_a_senha">Forgot password?</string>
     <string name="textview_dados_invalidos">Invalid Data</string>
     <string name="button_entrar">Login</string>
@@ -12,6 +13,7 @@
     <string name="editText_senha">Password</string>
     <string name="editText_usuario">CNPJ</string>
     <string name="txtview_login">SIGN IN</string>
+    <string name="txtview_pagina_inicial">INITIAL PAGE</string>
     <string name="contentDescription_person">Person Icon</string>
     <string name="contentDescription_lock">Lock Icon</string>
     <string name="errorTextView">CNPJ or Password invalid!</string>
@@ -20,4 +22,23 @@
     <string name="email">Email</string>
     <string name="telefone">Phone Number</string>
     <string name="razao_social">Corporate Name</string>
+    <string name="enviar_relatorio">Send Report</string>
+    <string name="cadastrar_paciente">Register Patient</string>
+    <string name="historico_de_relatorios">Report History</string>
+    <string name="status">Status</string>
+    <string name="botao_voltar">Back Button</string>
+    <string name="botao_perfil">Profile Button</string>
+    <string name="botao_home">Home Button</string>
+    <string name="editText_numero">Number</string>
+    <string name="complemento">Complement</string>
+    <string name="editText_logradouro">Patio</string>
+    <string name="enviar">Send</string>
+    <string name="cep">CEP</string>
+    <string name="bairro">Neighborhood</string>
+    <string name="cidade">City</string>
+    <string name="uf">UF</string>
+    <string name="perfil">PROFILE</string>
+    <string name="alterar_dados">Change Data</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="botao_sair">Logout Button</string>
 </resources>
