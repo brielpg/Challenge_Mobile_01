@@ -76,14 +76,14 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageViewPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
-        app:shapeAppearanceOverlay="@style/imagemCircular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:shapeAppearanceOverlay="@style/imagemCircular"
+        app:srcCompat="@drawable/noprofilepicture" />
 
     <TextView
         android:id="@+id/textViewNomeClinicaPerfil"
@@ -93,7 +93,7 @@
         android:fontFamily="@font/commissioner_semibold"
         android:text=""
         android:textColor="@color/roxo_texto"
-        android:textSize="26sp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewPerfil"
         app:layout_constraintStart_toStartOf="@+id/imageViewPerfil"
         app:layout_constraintTop_toBottomOf="@+id/imageViewPerfil"
@@ -103,27 +103,28 @@
         android:id="@+id/textViewTelefonePerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/telefone"
         android:textColor="@color/roxo_texto"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toStartOf="@+id/textViewNomeClinicaPerfil"
-        app:layout_constraintStart_toStartOf="@+id/textViewTelefoneUser"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTelefone"
         app:layout_constraintTop_toBottomOf="@+id/textViewNomeClinicaPerfil" />
 
     <TextView
         android:id="@+id/textViewTelefoneUser"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
         android:background="@color/white"
         android:fontFamily="@font/commissioner_semibold"
         android:padding="4dp"
         android:text=""
         android:textColor="@color/roxo_texto"
         android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="@+id/button_alterar_dados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTelefone"
         app:layout_constraintTop_toBottomOf="@+id/textViewTelefonePerfil"
         tools:text="+55 00 00000-0000" />
 
@@ -131,9 +132,10 @@
         android:id="@+id/imageViewTelefone"
         android:layout_width="45dp"
         android:layout_height="0dp"
+        android:layout_marginStart="32dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textViewTelefoneUser"
-        app:layout_constraintEnd_toStartOf="@+id/textViewTelefoneUser"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewTelefoneUser"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fill_call_24px"
@@ -163,7 +165,7 @@
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/email"
         android:textColor="@color/roxo_texto"
-        android:textSize="22sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewEmailUser"
         app:layout_constraintStart_toStartOf="@+id/textViewTelefonePerfil" />
 
@@ -203,7 +205,7 @@
         android:fontFamily="@font/commissioner_semibold"
         android:text="@string/cnpj"
         android:textColor="@color/roxo_texto"
-        android:textSize="22sp"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/textViewCnpjUser"
         app:layout_constraintStart_toStartOf="@+id/textViewTelefonePerfil" />
 

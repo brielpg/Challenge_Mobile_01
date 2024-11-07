@@ -2,10 +2,13 @@ package br.com.challenge01
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import br.com.challenge01.databinding.ActivityCadastroEnderecoBinding
+import okhttp3.OkHttpClient
+//import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.Response
@@ -22,9 +25,18 @@ class CadastroEnderecoActivity : AppCompatActivity() {
         binding = ActivityCadastroEnderecoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+//        val loggingInterceptor = HttpLoggingInterceptor().apply {
+//            level = HttpLoggingInterceptor.Level.BODY
+//        }
+//
+//        val httpClient = OkHttpClient.Builder()
+//            .addInterceptor(loggingInterceptor)
+//            .build()
+
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://localhost:8080/")
+            .baseUrl("http://25.64.203.9:8080/")
             .addConverterFactory(GsonConverterFactory.create())
+//            .client(httpClient)
             .build()
 
         apiService = retrofit.create(ApiService::class.java)
@@ -35,7 +47,7 @@ class CadastroEnderecoActivity : AppCompatActivity() {
             startActivity(Intent(this, CadastroActivity::class.java))
         }
 
-        binding.btnEntrar.setOnClickListener {
+        binding.btnEnviarCadastro.setOnClickListener {
             cadastrarClinica(cadastro)
         }
     }
@@ -66,11 +78,13 @@ class CadastroEnderecoActivity : AppCompatActivity() {
                             )
                         } else {
                             binding.errorTextView.visibility = View.VISIBLE
+                            Log.e("Cadastro", "Erro na resposta: ${response.errorBody()?.string()}")
                         }
                     }
 
                     override fun onFailure(call: Call<Void>, t: Throwable) {
                         binding.errorTextView.visibility = View.VISIBLE
+                        Log.e("Cadastro", "onFailure: ${t.message}", t)
                     }
                 })
             } else {

@@ -31,7 +31,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.widget.Button
-            android:id="@+id/btn_entrar"
+            android:id="@+id/btn_enviar_cadastro"
             android:layout_width="0dp"
             android:layout_height="62dp"
             android:layout_marginStart="16dp"
@@ -207,8 +207,8 @@
             android:textColor="#F44E4E"
             android:textColorHint="#F44E4E"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/btn_entrar"
-            app:layout_constraintStart_toStartOf="@+id/btn_entrar"
+            app:layout_constraintEnd_toEndOf="@+id/btn_enviar_cadastro"
+            app:layout_constraintStart_toStartOf="@+id/btn_enviar_cadastro"
             app:layout_constraintTop_toBottomOf="@+id/editTextComplemento"
             tools:text="@string/textview_dados_invalidos" />
 

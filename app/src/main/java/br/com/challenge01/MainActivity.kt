@@ -2,6 +2,7 @@ package br.com.challenge01
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://localhost:8080/")
+//            .baseUrl("http://localhost:8080/")
+            .baseUrl("http://25.64.203.9:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -58,12 +60,14 @@ class MainActivity : AppCompatActivity() {
                         startActivity(Intent(this@MainActivity, PaginaInicialActivity::class.java))
                     }
                 } else {
+                    Log.e("Login", "Erro na resposta: ${response.errorBody()?.string()}")
                     binding.errorTextView.visibility = View.VISIBLE
                 }
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable){
                 binding.errorTextView.visibility = View.VISIBLE
+                Log.e("Login", "onFailure: ${t.message}", t)
             }
         })
     }

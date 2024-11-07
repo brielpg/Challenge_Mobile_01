@@ -118,7 +118,7 @@ data class Endereco(
 }
 
 data class Cadastro(
-    val nomeClinica: String,
+    val nome: String,
     val cnpj: String,
     val telefone: String,
     val email: String,
@@ -137,10 +137,10 @@ data class Cadastro(
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeString(nome)
         parcel.writeString(cnpj)
-        parcel.writeString(email)
-        parcel.writeString(nomeClinica)
         parcel.writeString(telefone)
+        parcel.writeString(email)
         parcel.writeString(razaoSocial)
         parcel.writeString(senha)
         parcel.writeParcelable(endereco, flags)
