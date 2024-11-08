@@ -12,6 +12,7 @@
     <string name="avancar">NEXT</string>
     <string name="editText_senha">Password</string>
     <string name="editText_usuario">CNPJ</string>
+    <string name="cnpj_cadastro">CNPJ (00.000.000-0000-00)</string>
     <string name="txtview_login">SIGN IN</string>
     <string name="txtview_pagina_inicial">INITIAL PAGE</string>
     <string name="contentDescription_person">Person Icon</string>
@@ -33,7 +34,7 @@
     <string name="complemento">Complement</string>
     <string name="editText_logradouro">Patio</string>
     <string name="enviar">Send</string>
-    <string name="cep">CEP</string>
+    <string name="cep">CEP (00000-000)</string>
     <string name="bairro">Neighborhood</string>
     <string name="cidade">City</string>
     <string name="uf">UF</string>

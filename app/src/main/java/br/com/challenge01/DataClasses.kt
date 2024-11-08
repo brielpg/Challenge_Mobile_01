@@ -3,6 +3,7 @@ package br.com.challenge01
 import android.content.Context
 import android.os.Parcel
 import android.os.Parcelable
+import java.sql.Date
 
 fun Context.saveClinicaData(clinica: Clinica) {
     val sharedPref = getSharedPreferences("clinica_prefs", Context.MODE_PRIVATE) ?: return
@@ -31,6 +32,35 @@ fun Context.clearClinicaData() {
     with(sharedPref.edit()) {
         clear()
         apply()
+    }
+}
+
+data class AdicionalPerfil(
+    val dataCadastro: Date,
+    val uf: String
+) : Parcelable {
+    constructor(parcel: Parcel) : this(
+        Date(parcel.readLong()),
+        parcel.readString() ?: ""
+    )
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeLong(dataCadastro.time)
+        parcel.writeString(uf)
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<Clinica> {
+        override fun createFromParcel(parcel: Parcel): Clinica {
+            return Clinica(parcel)
+        }
+
+        override fun newArray(size: Int): Array<Clinica?> {
+            return arrayOfNulls(size)
+        }
     }
 }
 

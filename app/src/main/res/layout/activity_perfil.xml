@@ -236,4 +236,33 @@
         app:srcCompat="@drawable/logout_24px"
         app:tint="@color/roxo_texto" />
 
+    <TextView
+        android:id="@+id/textViewDataCriacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView"
+        tools:text="03-12-2000" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/textViewDataCriacao"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDataCriacao"
+        tools:text="ID: 1" />
+
+    <TextView
+        android:id="@+id/textViewUf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/commissioner_semibold"
+        android:textColor="@color/roxo_texto"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNomeClinicaPerfil"
+        app:layout_constraintStart_toEndOf="@+id/textViewNomeClinicaPerfil"
+        tools:text="UF" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,9 @@ package br.com.challenge01
 
 import retrofit2.Call
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface ApiService {
     @POST("clinica/login")
@@ -10,6 +12,9 @@ interface ApiService {
 
     @POST("clinica")
     fun createClinica(@Body clinica: Cadastro): Call<Void>
+
+    @GET("clinica/{cnpj}")
+    fun getClinica(@Path("cnpj") cnpj: String): Call<AdicionalPerfil>
 }
 
 data class LoginRequest(
