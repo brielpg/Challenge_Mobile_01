@@ -242,7 +242,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleEnderecoTextView"
-        tools:text="03-12-2000" />
+        tools:text="2024-12-31" />
 
     <TextView
         android:id="@+id/textViewId"

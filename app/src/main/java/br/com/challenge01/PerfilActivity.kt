@@ -64,8 +64,8 @@ class PerfilActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         val clinicaResponse = response.body()
                         if (clinicaResponse != null) {
-                            binding.textViewDataCriacao.text = clinicaResponse.dataCadastro.toString()
-                            binding.textViewUf.text = clinicaResponse.uf
+                            binding.textViewDataCriacao.text = clinicaResponse.dataCadastro
+                            binding.textViewUf.text = clinicaResponse.endereco.uf
                             binding.textViewId.text = "ID: " + clinica.id.toString()
                         }
                     } else {
